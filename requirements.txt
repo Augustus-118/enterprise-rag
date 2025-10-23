@@ -4,3 +4,5 @@ chromadb
 google-generativeai
 rank-bm25
 python-dotenv
+fastapi
+uvicorn[standard]
