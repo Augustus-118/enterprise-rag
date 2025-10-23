@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  rag-api:
+    build: .
+    container_name: enterprise-rag
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./documents:/app/documents  # Mount documents folder
+    restart: unless-stopped
