@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: enterprise-rag
+    env: docker
+    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
